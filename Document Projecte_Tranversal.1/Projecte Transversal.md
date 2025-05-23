@@ -103,14 +103,14 @@ Cal proposar una solució de CPD que contempli -com a mínim- els següents requ
     - **Rutes d'Evacuació i EPO:** Marcar clarament les vies d'evacuació i els botons d'apagada d'emergència (EPO).
     - **Ubicació de Càmeres i Controls d'Accés:** Dibuixar la posició estratègica de càmeres de seguretat i lectors d'accés.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.001.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.001.png)
 
 - **Diagrama d'Estructura de Racks (Elevació de Rack):** (Actualitzar els diagrames existents per mostrar):
   - **Unitats "U":** Indicar el nombre d'unitats de rack ("U") que ocupa cada component (servidors, switches, SAIs, patch panels).
   - **Gestió de Cablejat:** Dibuixar com es farà la gestió de cablejat horitzontal i vertical dins dels racks.
   - **Patch Panels:** Detallar la ubicació dels patch panels en relació amb els switches.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.002.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.002.png)
 
 - **Diagrama de Xarxa Lògica (General):** (NOU DIAGRAMA NECESSARI)
   - **Connexió de Servidors a Switches:** Mostrar com els servidors es connecten als switches.
@@ -175,11 +175,11 @@ Cal proposar una solució de CPD que contempli -com a mínim- els següents requ
 
 *RACK 1:*
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.003.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.003.png)
 
 *RACK 2:*
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.004.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.004.png)
 
 - **Switches:** Per a la infraestructura de xarxa, s'utilitzaran switches Cisco Catalyst, reconeguts per la seva fiabilitat i funcionalitats avançades:
   - **Switch Principal (Rack 1 - Producció):**
@@ -269,7 +269,7 @@ Cal proposar una solució de CPD que contempli -com a mínim- els següents requ
   - **Botons d'Apagat d'Emergència (EPO):** Es col·locaran botons EPO (Emergency Power Off) estratègicament a prop de les sortides, permetent tallar tota l'alimentació elèctrica del CPD en una emergència crítica, per exemple, en cas d'incendi o inundació per risc elèctric.
 
 - <a name="_9qgawln3w0ik"></a>**Diagrames, planells i fotografies de tota la seguretat física incorporada:** (Aquest punt remet als diagrames actualitzats i nous que s'han de crear, tal com s'ha descrit a l'apartat 1.1 "Planells, dibuixos, diagrames...")
-  - **Plànol de Seguretat Física:** Mostrarà la ubicació de les càmeres de videovigilància (amb el seu camp de visió), els sensors d'incendi, els capçals d'extinció de gas, els lectors de control d'accés a la porta, i els botons EPO.![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.005.png)
+  - **Plànol de Seguretat Física:** Mostrarà la ubicació de les càmeres de videovigilància (amb el seu camp de visió), els sensors d'incendi, els capçals d'extinció de gas, els lectors de control d'accés a la porta, i els botons EPO.![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.005.png)
 
 ##### <a name="_kankbyjb2cg"></a>**1.4.2 Lògica:**
 - **Restricció d'accés per autorització:** La seguretat lògica es basa en el principi del mínim privilegi (PoLP):
@@ -405,26 +405,26 @@ La implementació del CPD al núvol AWS utilitzarà els següents serveis (a mé
 
 DNS:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.006.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.006.png)
 
 Instalació DNS.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.007.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.007.png)
 
 Fico com la IP del servidor el nostre domini.
 
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.008.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.008.png)
 
 Edito al .yaml com correspon.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.009.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.009.png)
 
 Edito el resolved.cond i fico la IP del servidor i el nostre domini.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.010.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.010.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.011.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.011.png)
 
 Configuració el DNS.
 
@@ -436,43 +436,43 @@ Configuració el DNS.
 
 DHCP:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.012.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.012.png)
 
 Fiquem el intefaç de xarxa corresponen.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.013.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.013.png)
 
 Configurem el DHCP amb el rang de IPs que volem donar.
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.014.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.014.png)
 
 Comprovació
 
 
 FTP:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.015.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.015.png)
 
 Comprovació de què funciona l'ftp i l'usuari virtual creat (adminftp).
 
 NGINX:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.016.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.016.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.017.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.017.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.018.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.018.png)
 
 Comprovació de què el servei NGINX funciona com es pot veure la web funciona perfectament.
 
 OPENFIRE I SPARK:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.019.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.019.png)
 
 Com es pot comprovar funciona correctament el servei openfire.
 
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.020.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.020.png)
 
 I el spark també funciona correctament ja que podem enviar missatges entre els usuaris creats.
 
@@ -533,43 +533,43 @@ Els tres proveïdors de núvol són líders en sostenibilitat i eficiència ener
 
 2\.1 SERVEI D’AUDIO
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.021.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.021.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.022.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.022.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.023.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.023.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.024.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.024.png)
 
 2\.2 SERVEI VIDEO:
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.025.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.025.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.026.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.026.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.027.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.027.png)
 # <a name="_2139sc4wtm2m"></a>**3. Evidencia disseny i implementació d’una base de dades**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.028.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.028.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.029.png)
-
-
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.029.png)
 
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.030.png)
 
-![ref1]
+
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.030.png)
 
 ![ref1]
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.032.png)
+![ref1]
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.033.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.032.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.034.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.033.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.035.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.034.png)
+
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.035.png)
 
 
 
@@ -583,7 +583,7 @@ Els tres proveïdors de núvol són líders en sostenibilitat i eficiència ener
 
 **MODELO ENTIDAD-RELACIÓN:**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.036.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.036.png)
 
 **MODELO RELACIONAL:**
 
@@ -598,23 +598,23 @@ Els tres proveïdors de núvol són líders en sostenibilitat i eficiència ener
 
 **MODELO MySQL:**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.037.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.037.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.038.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.038.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.039.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.039.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.040.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.040.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.041.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.041.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.042.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.042.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.043.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.043.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.044.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.044.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.045.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.045.png)
 
 **La base de datos está normalizada porque:**
 
@@ -627,28 +627,28 @@ Els tres proveïdors de núvol són líders en sostenibilitat i eficiència ener
 
 **Esto garantiza que los datos están estructurados de manera eficiente, evitando inconsistencias y facilitando la escalabilidad de la base de datos.**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.046.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.046.png)
 
 [**https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7766](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7766)** 
 ##
 
 ## <a name="_jd1iioia4e6"></a><a name="_s6npj7qrvxsk"></a>**CREACIÓ DE BACKUPS:**
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.047.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.047.png)
 
 
 1. **BACKUPS DE EC2:**
 
 
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.048.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.048.png)
 
 1. **BACKUP DE DB:**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.049.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.049.png)
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.050.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.050.png)
 
-Els backups es fan automáticamente en AWS, ja que aquest proveïdor conté les còpies de seguretat implementades de forma predeterminada i ho podem comprovar en l’apartat de RDS (system) i allà estan les còpies de seguretat.![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.051.png)
+Els backups es fan automáticamente en AWS, ja que aquest proveïdor conté les còpies de seguretat implementades de forma predeterminada i ho podem comprovar en l’apartat de RDS (system) i allà estan les còpies de seguretat.![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.051.png)
 
 
 #
@@ -691,7 +691,7 @@ Hem fet servir el proveeïdor de núvol AWS, per tant els servers que tenim son 
 
 **2. Estimació de petjada de carboni**
 
-![](Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.052.png)
+![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.052.png)
 
 Per a calcular les emissions, utilitzem un factor mitjà global de 0.233 kg CO₂
 

@@ -559,10 +559,6 @@ Els tres proveïdors de núvol són líders en sostenibilitat i eficiència ener
 
 ![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.030.png)
 
-![ref1]
-
-![ref1]
-
 ![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.032.png)
 
 ![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.033.png)

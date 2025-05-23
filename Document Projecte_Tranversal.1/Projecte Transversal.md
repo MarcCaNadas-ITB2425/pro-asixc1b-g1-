@@ -112,16 +112,6 @@ Cal proposar una solució de CPD que contempli -com a mínim- els següents requ
 
 ![](Imatges/Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.002.png)
 
-- **Diagrama de Xarxa Lògica (General):** (NOU DIAGRAMA NECESSARI)
-  - **Connexió de Servidors a Switches:** Mostrar com els servidors es connecten als switches.
-  - **Connexió entre Switches:** Il·lustrar la interconnexió entre els switches dels diferents racks.
-  - **Firewall:** Mostrar la posició del firewall a la xarxa.
-  - **Connexió Externa:** Representar la connexió cap a la xarxa externa/internet.
-  - **VLANs:** Si s'utilitzen, indicar les diferents VLANs (e.g., VLAN de gestió, VLAN de dades, VLAN de backup).
-- **Diagrama d'Alimentació Elèctrica:** (NOU DIAGRAMA NECESSARI)
-  - **Rutes Redundants:** Mostrar les dues rutes d'alimentació redundants des de la font principal (o generador) fins als PDUs i els equips.
-  - **Ubicació de SAIs:** Indicar la posició dels SAIs i com s'integren en cada camí.
-
 - **Estructuració dels racks (mínim 2 racks):** S'implementaran dos racks de 42U cadascun, assegurant una distribució òptima d'equips i una gestió eficient de l'espai i el cablejat.
   - **Rack 1 (Producció):**
     - **2 Servidors HPE ProLiant DL380 Gen10:** Ubicats a la part central-inferior per estabilitat i flux d'aire.

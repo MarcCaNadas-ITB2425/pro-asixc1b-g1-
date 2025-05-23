@@ -1,42 +1,14 @@
-﻿
+﻿# 🏢 PROJECTE TRANSVERSAL ASIXc1B
 
-<a name="_qeeo2mtzwrt9"></a><a name="_y1vxf6najl7f"></a>PROJECTE
+---
 
-<a name="_hri9hm9zkra"></a>TRANSVERSAL ASIXc1B: 
+## 📄 DOCUMENTACIÓ TÈCNICA
 
-<a name="_om31fpdgwfyo"></a><a name="_89ynuowq7wv6"></a>DOCUMENTACIÓ TÈCNICA
+### 👥 GRUP 2 &nbsp;&nbsp;|&nbsp;&nbsp;👨‍💻 ASIXc1B
 
+#### 📅 31/05/2025
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a name="_e1516sjz8duy"></a>GRUP 2
-
-<a name="_lv2j6l4b7pfm"></a>ASIXc1B
-
-<a name="_pujzs1izk1nj"></a>   31/05/2025
+---
 
 <a name="_thmaof3x3adw"></a>ÍNDEX
 

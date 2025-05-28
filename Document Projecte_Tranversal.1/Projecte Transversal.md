@@ -758,7 +758,7 @@ Pàgina 63 de 64
 
 **3. Instalació Kibana**
 
-![](Imatges/Configuraciokibana.png)
+![](Imatges/configuraciokibana.png)
 
 **4. Comprovació Elastic**
 
@@ -865,4 +865,4 @@ Pots explorar els dashboards preinstal·lats (Ex. buscar "Filebeat System Overvi
 contrasenya elastic: 3y0Dc6ttFqcOv8tuV2u_
 
 Pàgina 64 de 64
-[ref1]: Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.031.png
+

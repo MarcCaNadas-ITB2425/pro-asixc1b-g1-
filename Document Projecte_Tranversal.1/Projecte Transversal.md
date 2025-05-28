@@ -730,7 +730,7 @@ Amb migració a t4g.large i altres optimitzacions:
 
 Així, el projecte serà més sostenible, alhora que redueix costos operatius.
 
-# <a name="_p0wtcl6b1qp4"></a><a name="_ocagsudq5nr4"></a>**5. Creació i configuració d'un SIEM (Security Information and Event Manager)*
+# <a name="_p0wtcl6b1qp4"></a><a name="_ocagsudq5nr4"></a>**5. Creació i configuració d'un SIEM (Security Information and Event Manager)**
 
 **1. Estructura propuesta**
 

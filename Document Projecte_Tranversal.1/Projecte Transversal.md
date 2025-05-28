@@ -730,10 +730,18 @@ Amb migració a t4g.large i altres optimitzacions:
 
 Així, el projecte serà més sostenible, alhora que redueix costos operatius.
 
-# <a name="_p0wtcl6b1qp4"></a><a name="_ocagsudq5nr4"></a>**5. CREACIÓ I CONFIGURACIÓ D'UN SIEM**
+# <a name="_p0wtcl6b1qp4"></a><a name="_ocagsudq5nr4"></a>**5. Creació i configuració d'un SIEM (Security Information and Event Manager)*
 
+**1. Estructura propuesta**
 
+La nostra estructura proposada es:
 
+  - Elasticsearch + Kibana + Logstash = Rebre i analisis de logs (Server3).
+  - EC2 + Filebeat + Systemmodule = Recolleix els logs i els envia al elastic (Server 1 i Server2).
+
+**2. Instalació Elasticsearch**
+
+![](Imatges/)
 Pàgina 62 de 62
 
 [ref1]: Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.031.png

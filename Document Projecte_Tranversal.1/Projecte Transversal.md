@@ -51,6 +51,7 @@
 
 [C. Optimització del tràfic:	58](#_w8s71qa0h5ug)
 
+[**5. Creació i configuració d'un SIEM	59**](#_ocagsudq5nr4)
 
 # <a name="_viizkamo71pa"></a>**1. Proposta de CPD**
 Cal proposar una solució de CPD que contempli -com a mínim- els següents requeriments:
@@ -728,6 +729,9 @@ Amb migració a t4g.large i altres optimitzacions:
 - Emissions totals → Potencial reducció del 40-50%.
 
 Així, el projecte serà més sostenible, alhora que redueix costos operatius.
+
+# <a name="_p0wtcl6b1qp4"></a><a name="_ocagsudq5nr4"></a>**5. CREACIÓ I CONFIGURACIÓ D'UN SIEM**
+
 
 
 Pàgina 62 de 62

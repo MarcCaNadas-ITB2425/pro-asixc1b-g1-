@@ -719,7 +719,7 @@ Total emissions diàries:
 
 
 
-
+Pàgina 62 de 63
 
 **4. Impacte de les millores**
 
@@ -741,7 +741,128 @@ La nostra estructura proposada es:
 
 **2. Instalació Elasticsearch**
 
-![](Imatges/)
-Pàgina 62 de 62
+![](Imatges/Instalar.png)
 
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+sudo apt install apt-transport-https
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
+sudo apt update
+sudo apt install elasticsearch
+
+![](Imatges/configuracioelastic.png)
+
+![](Imatges/elastic.png)
+
+
+Pàgina 63 de 64
+
+**3. Instalació Kibana**
+
+![](Imatges/Configuraciokibana.png)
+
+**4. Comprovació Elastic**
+
+![](Imatges/entremelastic.png)
+
+**5. Instalació Logstash**
+
+![](Imatges/instalaciolog.png)
+
+![](Imatges/configuraciolog.png)
+
+**6. Instalació i configuració Filebeat**
+
+Aquest resum assumeix que el teu SIEM (Elasticsearch i Kibana) està en la IP privada 172.31.41.144 (amb port 9200 per a ES i 5601 per a Kibana), i uses HTTPS per a Elasticsearch i la IP pública 13.219.167.230:5601 per a accedir a Kibana des del navegador.
+Màquina amb Filebeat (Ubuntu)
+Instal·lació de Filebeat (si no està instal·lat):
+Importa la clau GPG de Elastic:
+wget -qO - https://artifacts.elastic.co/gpg-key-elasticsearch | suo gpg --dearmor -o /usr/*share/*keyrings/*elastic-*keyring.gpg * Afegeix el repositori de Filebeat:bash tiro "deb [signed-*by=/*usr/*share/*keyrings/*elastic-*keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | suo tee /etc/apt/*sources.list.d/elastic-8.x.list * Actualitza els paquets i instal·la Filebeat:bash suo apt update suo apt install filebeat ```
+Configuració de filebeat.yml:
+
+
+Edita l'arxiu principal de configuració de Filebeat:
+Bash
+suo nano /etc/filebeat/*filebeat.yml
+
+
+Localitza la secció output.elasticsearch: i configura-la per a apuntar al teu Elasticsearch SIEM, usant HTTPS i amb les credencials necessàries (si tens seguretat habilitada en ES).
+YAML
+output.elasticsearch:
+hosts: ["172.31.41.144:9200"]
+protocol: https
+username: "elastic" # O l'usuari amb permisos adequats
+password: "LA TEVA_CONTRASENYA_DE_ELASTIC"
+ssl.verification_*mode: none # Usar només per a proves. Per a producció, configurar certificats.
+
+
+Comenta o elimina la secció output.logstash: si està habilitada, per a assegurar-te que només s'envia a Elasticsearch.
+Guarda els canvis i sal.
+Habilitar i Configurar Mòduls (Ex. Mòdul system):
+
+
+Habilita el mòdul desitjat (ex. system per a logs del sistema):
+Bash
+suo filebeat modulis enable system
+
+
+Edita l'arxiu de configuració del mòdul habilitat per a activar els seus filesets (sub-configuracions). Per al mòdul system, habilita almenys syslog i auth:
+Bash
+suo nano /etc/filebeat/modulis.d/system.yml
+Assegura't que enabled: true per als filesets que vols usar:
+YAML
+- moduli: system
+syslog:
+enabled: true
+#var.paths: ["/var/*log/*syslog*"]
+auth:
+enabled: true
+#var.paths: ["/var/*log/*auth.log*"]
+
+
+Guarda els canvis i sal.
+Executar el Setup de Filebeat: Aquest pas carrega les plantilles, dashboards i pipelines en Kibana. És crucial dir-li a Filebeat on està Kibana (usant la IP privada accessible des de Filebeat).
+
+Bash
+suo filebeat setup -e \
+-E output.elasticsearch.username=*elastic \
+-E output.elasticsearch.password=LA TEVA_CONTRASENYA_DE_ELASTIC \
+-E setup.kibana.host=172.31.41.144:5601
+(Reemplaça LA TEVA_CONTRASENYA_DE_ELASTIC amb la teva contrasenya real).
+
+
+Iniciar/Reiniciar el Servei de Filebeat:
+
+Bash
+suo systemctl enable filebeat # Assegura que iniciï amb el sistema
+suo systemctl start filebeat
+suo systemctl restart filebeat # Si ja estava corrent
+
+
+Verificar l'Estat i els Logs de Filebeat:
+
+Bash
+suo systemctl estatus filebeat
+suo journalctl -o filebeat -f
+Cerca missatges com Publishing events o Events sent sense errors de connexió.
+
+
+Màquina SIEM (Elasticsearch/*Kibana)
+Accedir a Kibana: Obre el teu navegador i veu a la URL pública de Kibana: http://13.219.167.230:5601/
+
+
+Configurar Patró d'Índex en Kibana:
+
+
+En Kibana, veu a Analytics > Discover.
+Si se't demana, crea un nou patró d'índex: filebeat-*
+Selecciona @timestamp com el camp de temps.
+Verificar els Logs en Kibana:
+
+
+En la vista "Discover", expandeix el rang de temps (ex. "Last 1 hour" o "Last 24 hours") per a assegurar-te que abastes el període en el qual Filebeat ha estat enviant logs.
+Hauries de començar a veure els logs de la màquina Ubuntu.
+Pots explorar els dashboards preinstal·lats (Ex. buscar "Filebeat System Overview" en la secció Dashboards).
+contrasenya elastic: 3y0Dc6ttFqcOv8tuV2u_
+
+Pàgina 64 de 64
 [ref1]: Aspose.Words.8a496ea5-6372-4585-a41e-1376b0ff93eb.031.png
